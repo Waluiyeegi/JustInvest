@@ -13,18 +13,34 @@ public class LoginUserTest  {
     @Test
     public void testLogin(){
 
-        String testInput = "Kobo\nCaleb!123\nKABOB\n123\nKABOB\nCaleb!123\n2\n";
+        String testInput = "Calob\nCaleb!123\n2\n";
         ByteArrayInputStream inputStream = new ByteArrayInputStream(testInput.getBytes());
         System.setIn(inputStream);
 
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         System.setOut(new PrintStream(outputStream));
 
+        EnrollUser enrollUser = new EnrollUser(new Scanner(System.in));
+        enrollUser.enroll();
+
+        String output = outputStream.toString();
+
+        assertTrue(EnrollUser.checkIfUsernamePresent("Calob"));
+        assertEquals("Premium Client", PasswordManager.checkUser("Calob", "Caleb!123"));
+
+
+        testInput = "Kobo\nCaleb!123\nKABOB\n123\nCalob\nCaleb!123\n2\n";
+        inputStream = new ByteArrayInputStream(testInput.getBytes());
+        System.setIn(inputStream);
+
+        outputStream = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outputStream));
+
         LoginUser loginUser = new LoginUser(new Scanner(System.in));
         User user = loginUser.login();
 
-        String output = outputStream.toString();
-        assertEquals("KABOB", user.username);
+        output = outputStream.toString();
+        assertEquals("Calob", user.username);
         assertEquals("PremiumClient", user.role.getNameOfRole());
         assertTrue(output.contains("Invalid Username/Password"));
 
