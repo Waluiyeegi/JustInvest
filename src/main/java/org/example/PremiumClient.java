@@ -1,6 +1,8 @@
 package org.example;
 
-
+/***
+ * Has all the permissions of client plus the 2 extra ones
+ */
 class PremiumClient extends Client {
     public PremiumClient(){
         permissions.add(Permissions.MODIFY_PORTFOLIO);

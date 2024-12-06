@@ -1,5 +1,6 @@
 package org.example;
 
+//client is a role that has these permissions
 class Client extends AbstractRole{
 
     public Client(){

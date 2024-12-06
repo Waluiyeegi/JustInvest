@@ -1,4 +1,0 @@
-Caleb,$2a$12$70u8qjmw6XmExl8TAJO6Eu5jRGd1NGVnDJ3VI.t7ZZpiOwQtyl65K,Client
-Caleb,$2a$12$PaUIp1N.3NX9IW0LzNIFwO7KsWr7JjgiJjLEWeUn5OJCOEjQ5j6.y,Client
-caleb,$2a$12$/l0dUuKqLnr9mlCceegEUeAwyHev3tPl7Y5OScvr5sSWi2627AyO.,Teller
-Cabob,$2a$12$/HpmM2g1E1ls71ZW4sjci.NBMDAhhH8kitXqOaHJZ3g1O6W1DlvE.,Client
