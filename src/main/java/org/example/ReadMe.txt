@@ -1,5 +1,6 @@
 Project Title: justInvest User Authentication and Access Control System
 
+Caleb 101187217
 Description:
 The System consists of 5 main classes and main text files.  The system allows you to create an account with your
 name password and role.  Then you can login using your credentials and depending on the role, you can do the actions
@@ -9,11 +10,17 @@ the password and the searching and inputting the password into a text file.
 
 How to Run:
 cd into the JustInvest project folder
-java -jar target/JustInvest-1.0-SNAPSHOT.jar
+java -jar JustInvest-1.0-SNAPSHOT.jar
+
+note:
+i believe when you run the jar, the password file might have all the test in which I put the
+entries into the file, so if you try to create a user with those information, it wont work, but i will
+delete them when i push my git code so it shouldnt be in the passwwd.txt file.
 
 Where the files are:
 under src/main/java/org.example : are all my runnign files
 under test/java/org.example : are my 4 tests
+My jar file is right in the JustInvest project folder
 
 Problem 1:
 code is the different class files that have the access control mechanism
